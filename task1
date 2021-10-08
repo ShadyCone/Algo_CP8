@@ -1,0 +1,11 @@
+print ("CP8")
+n = int(input("enter a number:"))
+s=int(input("enter a binary or octal number:(2 or 8)",))
+b = ''""
+if s==2 or s==8:
+    while n > 0:
+    	b = str(n % s) + b
+    	n = n // s
+    print(b)
+else: 
+   print("Enter 2 or 8 in the field of the selected system")
